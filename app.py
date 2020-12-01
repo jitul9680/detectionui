@@ -20,7 +20,7 @@ def getURL():
         print(url)
         data = FeatureExtraction.getAttributess(url)
         print(data)
-        RFmodel = pickle.load(open('model.sav', 'rb'))
+        RFmodel = pickle.load(open('RandomForestModel.sav', 'rb'))
         predicted_value = RFmodel.predict(data)
         #print(predicted_value)
         if predicted_value == 0:    
